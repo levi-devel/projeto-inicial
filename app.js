@@ -8,7 +8,7 @@ function editaTextonaTela(tag, texto){
 
 function exibirMensagemInicial(){
     editaTextonaTela('h1', 'Jogo do número secreto');
-    editaTextonaTela('p', 'Escolha um número entre 1 e 10');
+    editaTextonaTela('p', 'Escolha um número entre 1 e 100');
 }
 exibirMensagemInicial();
 
@@ -31,7 +31,7 @@ function verificarChute(){
 }
 
 function gerarNumeroSecreto(){
-    return parseInt(Math.random() * 10 +1);
+    return parseInt(Math.random() * 100 +1);
 }
 
 function limpaCampo(){
